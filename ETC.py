@@ -68,7 +68,7 @@ def menu():
             menuScreen.blit(closeText,(15,650))
             menuScreen.blit(menuSelectImage, select)
             pygame.display.flip() #allows colour/other graphics to be displayed
-            clock.tick(80)
+            clock.tick(30)
             
 def controls():
     controlScreen = pygame.display.set_mode((1280, 705))
@@ -97,7 +97,7 @@ def controls():
         controlScreen.blit(text2,(443, 360))
         controlScreen.blit(text3,(445, 420))
         pygame.display.flip()
-        clock.tick(80)
+        clock.tick(30)
     menu()
         
     
@@ -1030,7 +1030,7 @@ def main():
                 screen.blit(atpsText,(atps[i].centerx-10,atps[i].centery-13))
         screen.blit(closeText,(1050,5))
         pygame.display.flip()
-        clock.tick(80)
+        clock.tick(30)
     menu()
 
 menu()
